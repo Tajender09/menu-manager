@@ -94,15 +94,21 @@ section > h1{
 .prod-box:hover .prod-sub:before, .prod-box:hover .prod-sub > div > a{
 	display: inline-block;
 }
-@media all and (max-width: 767px){
-	.col-md-4{
-		margin-top: 2rem;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
+@media all and (max-width: 375px){
+	.prod-sub{
+		width: 330px !important;
 	}
-	.col-md-4:first-of-type{
-		margin-top: 0;
+}
+@media all and (min-width: 768px) and (max-width: 991px){
+	.card{
+		width: 15rem !important;
+	}
+	.prod-sub{
+		width: 100% !important;
+	}
+}
+@media all and (max-width: 1200px){
+	.prod-sub{
+		width: 100% !important;
 	}
 }
